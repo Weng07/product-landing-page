@@ -12,6 +12,7 @@ body {
   color: #333;
   background-color: #f0f0f0; /* Light background color for contrast */
   padding-top: 110px; 
+  width: 100vw;
 }
 
 /* Header Styling */
@@ -182,7 +183,7 @@ body {
 
 .product img {
   width: 100%; /* Make the image take up the full width of its container */
-  height: 200px; /* Maintain the aspect ratio */
+  height: 300px; /* Maintain the aspect ratio */
   max-height: 350px; /* Set a maximum height to ensure uniformity */
   object-fit: cover; /* Ensures the image covers the area without distortion */
   border-radius: 8px; /* Maintain the rounded corners */
