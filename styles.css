@@ -1,0 +1,336 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f0f0; /* Light background color for contrast */
+  padding-top: 110px; 
+}
+
+/* Header Styling */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Logo Styling */
+#logo img {
+  max-height: 50px;
+}
+
+/* Navbar Styling */
+#nav-bar {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  align-items: center; /* Align links vertically with the logo */
+}
+
+#nav-bar .nav-link {
+  color: #fff;
+  background-color: #333;
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+#nav-bar .nav-link:hover {
+  background-color: #575757;
+}
+
+/* Main Content Styling */
+.products {
+  max-width: 1200px;
+  margin: 5px auto;
+  padding: 20px;
+  background-color: #fff; /* White background for content sections */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+}
+
+.eco {
+  color: #008000;
+  font-size: 50px;
+  font-style: italic;
+}
+
+.blue {
+  color: blue;
+  font-style: italic;
+}
+
+.green {
+  color: #32cd32;
+  font-style: italic;
+}
+
+/* Product Description Styling */
+#product-description {
+  margin-bottom: 40px; /* Space below the product description */
+}
+
+#product-description h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+#product-description p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#product-description ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#product-description ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Video Section Styling */
+#video-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+#video h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Responsive iframe container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000; /* Optional: black background behind the video */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none; 
+  border-radius: 8px; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Products Section Styling */
+#products-section {
+  margin: 60px 0;
+  padding-bottom: 60px; /* Ensure there's space between products and next section */
+  text-align: center;
+}
+
+/* Clearfix for products section */
+#products-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#products-section h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+/* Container for all products */
+.products-container {
+  display: flex;
+  justify-content: space-between; /* Ensure even spacing between products */
+  flex-wrap: wrap; /* Allow wrapping to new lines on smaller screens */
+  gap: 20px; /* Space between product containers */
+}
+
+/* Individual product styling */
+.product {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); /* Responsive width, three products per row */
+  text-align: center;
+  max-width: calc(33.333% - 20px); /* Ensure they don't exceed one-third of the row */
+}
+
+.product img {
+  width: 100%; /* Make the image take up the full width of its container */
+  height: 200px; /* Maintain the aspect ratio */
+  max-height: 350px; /* Set a maximum height to ensure uniformity */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 8px; /* Maintain the rounded corners */
+}
+
+.product-name {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #668;
+}
+
+/* Subscription Form Section Styling */
+#form-section {
+  margin-top: 80px; /* Increase margin-top to create more space between sections */
+  padding: 40px;
+}
+
+#form-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#form-section p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+#form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#form input[type="email"],
+#form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+#form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#form input[type="submit"]:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 768px) {
+   #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow below the header */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 20px; /* Adds space between the header and content */
+  }
+
+  body {
+    padding-top: 150px; /* Ensure body content is not hidden under the fixed header */
+  }
+
+  #logo {
+    order: 1; 
+    margin-bottom: 10px;
+  }
+
+  #nav-bar {
+    order: 2; 
+    width: 100%; 
+    flex-direction: row; 
+    text-align: center;
+  }
+
+  #nav-bar .nav-link {
+    width: 100%; 
+    margin-bottom: 10px;
+  }
+
+  .products {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+    overflow: hidden;
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+
+  .products-container {
+    flex-direction: column; /* Stack products vertically */
+    align-items: center; /* Center align products */
+  }
+
+  .product {
+    width: 100%; /* Ensure each product takes the full width */
+    max-width: 400px; /* Set a maximum width to prevent them from being too wide */
+    margin-bottom: 20px; /* Add space between the products */
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav-bar .nav-link {
+    padding: 10px;
+  }
+
+  #form input[type="email"],
+  #form input[type="submit"] {
+    padding: 8px;
+  }
+
+  .product {
+    flex: 1 1 100%; /* Make each product take full width */
+    max-width: 100%; /* Ensure it doesn't exceed screen width */
+    margin-bottom: 20px; /* Space between products */
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+}
